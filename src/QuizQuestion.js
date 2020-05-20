@@ -6,9 +6,10 @@ class QuizQuestion extends Component {
   constructor(props) {
     super(props);
     this.state = { quiz_position: 1 };
+    this.handleClick =this.handleClick.bind(this)
   }
 
-  handleClick  = (buttonText) => {
+  handleClick(buttonText){
     buttonText === this.props.quiz_question.answer ? this.props.showNextQuestionHandler() : null
   }
 
