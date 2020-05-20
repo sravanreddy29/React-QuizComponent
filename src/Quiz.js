@@ -14,7 +14,7 @@ class Quiz extends Component {
     const { quiz_position } = this.state;
     return (
       <div className={"QuizQuestion"}>
-        <QuizQuestion quiz_question={quizData.quiz_questions[quiz_position]} />
+        <QuizQuestion quiz_question={quizData.quiz_questions[quiz_position-1]} />
       </div>
     );
   }
